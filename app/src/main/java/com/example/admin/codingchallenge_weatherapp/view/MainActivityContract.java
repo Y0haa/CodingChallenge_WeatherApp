@@ -14,11 +14,9 @@ public interface MainActivityContract {
 
     interface View extends BaseView {
         void updateWeatherView(WeatherDisplay weatherDisplay);
-
         void updateWeatherViewError(String WeatherError);
     }
-
     interface Presenter extends BasePresenter<MainActivityContract.View>{
-        void getCity(String city, Context context);
+        void getCity(String city);
     }
 }
