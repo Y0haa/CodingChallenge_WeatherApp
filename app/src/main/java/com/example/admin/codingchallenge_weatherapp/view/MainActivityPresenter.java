@@ -33,7 +33,7 @@ public class MainActivityPresenter implements MainActivityContract.Presenter {
         this.view = null;
     }
 
-// Convert Kelvin valus from openweather to Fahrenheit
+// Convert Kelvin valus from open weather to Fahrenheit
     private String getConversionKelvinToFahrenheit(Double Kelvin) {
         Double kelvinToFahrenheit = Kelvin * 9 / 5 - 459.67;
         return String.format("%.2f", kelvinToFahrenheit);
